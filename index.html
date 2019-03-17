@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecommerce Starter – ATTACH</title>
+    <link
+      rel="icon"
+      href="https://dev-assets.attach.live/icon2/ecommerce-starter/favicon.ico"
+      sizes="32x32"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script src="./github/convert-redirect.js"></script>
+    <!-- End Single Page Apps for GitHub Pages -->
+
+    <!-- Set up ATTACH for your website: https://documentation.attach.live/properties -->
+    <script src="https://dev-video.attach.live/v1" defer></script>
+    <!-- Define static SDK properties in meta -->
+    <meta
+      property="attach:api-key"
+      content="dev_web_Mstkamaw2lALzdzJHfGEwrt5D6wyqeUkA"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="//unpkg.com/navigo@6"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- LANDING -->
+
+    <div id="landing" class="hide page">
+      <section class="left-side">
+        <img
+          class="logo"
+          src="https://dev-assets.attach.live/logo/logo-white.svg"
+        />
+        <p class="title text-center">Video streaming for mobile and web.</p>
+      </section>
+      <section class="right-side">
+        <h1 class="center">Who else is looking at this item?</h1>
+        <img
+          class="webrtc-logo"
+          src="https://dev-assets.attach.live/logos/product/managed-webrtc-logo-for-yellow-360.png"
+        />
+        <div class="center">
+          <h3 class="title text-center">Interactivity for your store.</h3>
+          <ul class="platforms">
+            <li>
+              <a href="" target="_blank" rel="noopener">
+                <img
+                  class="platform-icon"
+                  src="https://dev-assets.attach.live/icons/thirdparty/github-icon-white-large.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener">
+                <img
+                  class="platform-icon"
+                  src="https://dev-assets.attach.live/icons/thirdparty/codepen-icon-white-large.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener">
+                <img
+                  class="platform-icon"
+                  src="https://dev-assets.attach.live/icons/thirdparty/android-icon-white-large.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank" rel="noopener">
+                <img
+                  class="platform-icon"
+                  src="https://dev-assets.attach.live/icons/thirdparty/ios-icon-white-large.png"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="button center" id="start">Get Started</button>
+        <p>
+          For live video and chat, view the same item on two devices or in two
+          browser windows.
+        </p>
+
+        <div>
+          <p class="copyright">
+            &copy; 2019 Closeup, Inc. All rights reserverd.
+          </p>
+          <p class="disclaimer">
+            Photos courtesy of Unsplash. The fashion items presented here are
+            not for sale. Closeup is not related with Github, CodePen, Apple,
+            Google, unsplash, and the WebRTC open source project.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- SDK -->
+    <div id="pages" class="hide page">
+      <button class="direction direction-left" id="previousButton"></button>
+      <button class="direction direction-right" id="nextButton"></button>
+      <section class="left-side" id="left-side">
+        <p class="price" id="price"></p>
+        <p class="credits" id="credits"></p>
+      </section>
+      <section class="right-side no-padding" id="sdk-section">
+        <div class="attach-videocall"></div>
+        <div class="attach-chat"></div>
+      </section>
+    </div>
+
+    <!-- Unavailable page -->
+    <div class="unavailable hide">
+      <img
+        class="logo center"
+        src="https://dev-assets.attach.live/logo/logo-white.svg"
+      />
+      <p class="unavailable__text text-center">
+        Video streaming for mobile and web
+      </p>
+      <p class="unavailable__subtitle text-center">
+        Interactivity for your store
+      </p>
+      <p class="text-center">
+        This ecommerce starter is optimized for desktop browsers. For testing on
+        mobile, get the app
+      </p>
+      <a href="#" class="hide" id="ios" target="_blank" rel="noopener">
+        <img
+          class="app"
+          src="https://dev-assets.attach.live/badges/badge-ios-en-4x.png"
+        />
+      </a>
+      <a href="#" class="hide" id="android" target="_blank" rel="noopener">
+        <img
+          class="app"
+          src="https://dev-assets.attach.live/badges/badge-android-en-4x.png"
+        />
+      </a>
+    </div>
+  </body>
+</html>
