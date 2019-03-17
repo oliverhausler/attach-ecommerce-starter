@@ -1,2 +1,2 @@
 # attach-ecommerce-starter
-Implement an interactive store where customers meet
+Use ATTACH for an interactive store where customers meet
