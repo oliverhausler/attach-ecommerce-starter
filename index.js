@@ -225,10 +225,6 @@ var magazine = {
 window.magazine = magazine
 window.pages = pages
 
-function updateAttach(prop, value) {
-	attachSdk.setProperty(prop, value)
-}
-
 function render(pageData) {
 	var leftSide = document.querySelector('#left-side')
 	var price = document.querySelector('#price')
@@ -297,9 +293,7 @@ router
 		render(magazine.getPageData().photo)
 
 		//Update attach properties
-		Object.keys(magazine.getPageData().properties).forEach(k => {
-			updateAttach(k, magazine.getPageData().properties[k])
-		})
+		attachSdk.setProperties(magazine.getPageData().properties)
 	})
 	.on('*', function() {
 		const pathPhoto = window.location.pathname.split('/')[2]
