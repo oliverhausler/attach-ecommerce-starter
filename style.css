@@ -23,7 +23,6 @@ a:hover {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	min-width: 550px;
 }
 
 section {
@@ -69,6 +68,10 @@ section {
 	flex: 1;
 }
 
+.right-side p.title {
+	margin-top: 40px;
+}
+
 h1 {
 	margin-top: 8vh;
 	font-size: 1.8em;
@@ -85,8 +88,25 @@ h1 {
 	align-self: center;
 }
 
+.short {
+	max-width: 410px;
+}
+
 .copyright {
 	margin-bottom: 20px;
+}
+
+.copyright a {
+	color: white;
+}
+
+.copyright a:hover {
+	text-decoration: underline;
+}
+
+.copyright,
+.disclaimer {
+	font-size: 14px;
 }
 
 .platform-icon {
@@ -95,9 +115,13 @@ h1 {
 	width: 100%;
 }
 
+.logo-wrapper {
+	text-align: center;
+}
+
 .webrtc-logo {
 	width: 100%;
-	max-width: 450px;
+	max-width: 410px;
 	margin: 0 auto;
 }
 
@@ -248,13 +272,13 @@ h1 {
 		justify-content: space-around;
 	}
 
-	.right-side h1 {
+	.right-side h2 {
 		text-align: center;
 		margin-top: 10px;
 	}
 
 	.right-side .platforms {
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 
 	.right-side .platforms img {
@@ -275,5 +299,14 @@ h1 {
 		font-size: 16px;
 		padding: 0 16px;
 		text-align: center;
+	}
+
+	.right-side p:last-child {
+		padding-bottom: 16px;
+	}
+
+	.right-side p.title {
+		font-size: 18px;
+		margin-top: 0;
 	}
 }
