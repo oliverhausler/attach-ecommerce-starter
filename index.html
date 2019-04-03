@@ -33,72 +33,80 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
     <script src="//unpkg.com/navigo@6"></script>
+    <script src="common.js" defer></script>
+    <script src="mobile.js" defer></script>
+    <script src="listeners.js" defer></script>
+    <script src="pages.js" defer></script>
+    <script src="magazine.js" defer></script>
     <script src="index.js" defer></script>
   </head>
   <body>
     <!-- LANDING -->
 
     <div id="landing" class="hide page">
+      <a 
+        href="https://github.com/attach-live/attach-ecommerce-starter" 
+        target="_blank" 
+        class="github-corner" 
+        aria-label="View source on GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 250 250" fill="#ffc730" style="position: absolute; top: 0; right: 0">
+          <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#fff"/>
+          <path class="octo-arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style="-webkit-transform-origin: 130px 106px; transform-origin: 130px 106px"/>
+          <path class="octo-body" d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"/>
+        </svg>
+      </a>
       <section class="left-side">
-        <img
-          class="logo"
-          src="https://dev-assets.attach.live/logo/logo-white.svg"
-        />
+        <a href="https://www.attach.live/" class="logo-wrapper" target="_blank" rel="noopener">
+          <img
+            class="logo"
+            src="https://dev-assets.attach.live/logo/logo-white.svg"
+          />
+        </a>
         <p class="title text-center">Video streaming for mobile and web.</p>
       </section>
       <section class="right-side">
-        <h1 class="center">Who else is looking at this item?</h1>
-        <img
-          class="webrtc-logo"
-          src="https://dev-assets.attach.live/logos/product/managed-webrtc-logo-for-yellow-360.png"
-        />
-        <div class="center">
-          <h3 class="title text-center">Interactivity for your store.</h3>
-          <ul class="platforms">
-            <li>
-              <a href="" target="_blank" rel="noopener">
-                <img
-                  class="platform-icon"
-                  src="https://dev-assets.attach.live/icons/thirdparty/github-icon-white-large.png"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank" rel="noopener">
-                <img
-                  class="platform-icon"
-                  src="https://dev-assets.attach.live/icons/thirdparty/codepen-icon-white-large.png"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank" rel="noopener">
-                <img
-                  class="platform-icon"
-                  src="https://dev-assets.attach.live/icons/thirdparty/android-icon-white-large.png"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="" target="_blank" rel="noopener">
-                <img
-                  class="platform-icon"
-                  src="https://dev-assets.attach.live/icons/thirdparty/ios-icon-white-large.png"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-
+        <p class="center text-center title short">People who look at the same item can connect to each other.</p>
+        
+        <a href="https://www.attach.live/" class="logo-wrapper" target="_blank" rel="noopener">
+          <img
+            class="webrtc-logo"
+            src="https://dev-assets.attach.live/logos/product/managed-webrtc-logo-for-yellow-360.png"
+          />
+        </a>
+        
         <button class="button center" id="start">Get Started</button>
-        <p>
-          For live video and chat, view the same item on two devices or in two
-          browser windows.
-        </p>
+        
+        <div class="center text-center short">
+          <p>
+            Test live video and chat in two browser windows
+            or get the starter app for your phone or tablet.
+          </p>
+  
+          <div class="center text-center">
+            <ul class="platforms">
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=live.attach.starter.ecommerce" target="_blank" rel="noopener">
+                  <img
+                    class="platform-icon"
+                    src="https://dev-assets.attach.live/icons/thirdparty/android-icon-white-large.png"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank" rel="noopener">
+                  <img
+                    class="platform-icon"
+                    src="https://dev-assets.attach.live/icons/thirdparty/ios-icon-white-large.png"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div>
           <p class="copyright">
-            &copy; 2019 Closeup, Inc. All rights reserverd.
+            &copy; 2019 <a href="https://www.attach.live/" target="_blank" rel="noopener">Closeup, Inc.</a> All rights reserverd.
           </p>
           <p class="disclaimer">
             Photos courtesy of Unsplash. The fashion items presented here are
@@ -118,6 +126,7 @@
         <p class="credits" id="credits"></p>
       </section>
       <section class="right-side no-padding" id="sdk-section">
+        <!-- Place the embed on your website -->
         <div class="attach-videocall"></div>
         <div class="attach-chat"></div>
       </section>
@@ -125,17 +134,19 @@
 
     <!-- Unavailable page -->
     <div class="unavailable hide">
-      <img
-        class="logo center"
-        src="https://dev-assets.attach.live/logo/logo-white.svg"
-      />
-      <p class="unavailable__text text-center">
+      <a href="https://www.attach.live/" class="logo-wrapper" target="_blank" rel="noopener">
+        <img
+          class="logo center"
+          src="https://dev-assets.attach.live/logo/logo-white.svg"
+        />
+      </a>
+      <p class="unavailable__text text-center center">
         Video streaming for mobile and web
       </p>
-      <p class="unavailable__subtitle text-center">
-        Interactivity for your store
+      <p class="unavailable__subtitle text-center center">
+        People who look at the same item can connect to each other.
       </p>
-      <p class="text-center">
+      <p class="text-center center">
         This ecommerce starter is optimized for desktop browsers. For testing on
         mobile, get the app
       </p>
@@ -145,7 +156,7 @@
           src="https://dev-assets.attach.live/badges/badge-ios-en-4x.png"
         />
       </a>
-      <a href="#" class="hide" id="android" target="_blank" rel="noopener">
+      <a href="https://play.google.com/store/apps/details?id=live.attach.starter.ecommerce" class="hide" id="android" target="_blank" rel="noopener">
         <img
           class="app"
           src="https://dev-assets.attach.live/badges/badge-android-en-4x.png"
