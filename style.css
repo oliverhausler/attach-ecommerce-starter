@@ -190,9 +190,9 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 20vh;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%);
+	transform: translate(-50%, -50%);
 	width: 100%;
 	max-width: 80%;
 	background: #ffc730;
@@ -216,7 +216,7 @@ h1 {
 	width: 100%;
 	max-width: 250px;
 	object-fit: contain;
-	margin: 30px auto 50px;
+	margin: 30px auto 0;
 }
 
 .mobile .unavailable {
@@ -230,6 +230,8 @@ h1 {
 .android #android,
 .ios #ios {
 	display: flex !important;
+	flex-direction: row;
+	align-items: center;
 }
 
 .mobile .left-side * {
@@ -238,6 +240,10 @@ h1 {
 
 .mobile .right-side {
 	display: none;
+}
+
+.mobile .unavailable p {
+	max-width: 74%;
 }
 
 .hide {
@@ -249,6 +255,11 @@ h1 {
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+
+.github-corner svg {
+	height: 120px;
+	width: 120px;
 }
 
 .github-corner:hover .octo-arm {
@@ -274,6 +285,20 @@ h1 {
     .github-corner .octo-arm{
         animation:octocat-wave 560ms ease-in-out
     }
+}
+
+@media (max-width: 1200px) {
+	.github-corner svg {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.github-corner svg {
+		height: 80px;
+		width: 80px;
+	}
 }
 
 @media (min-width: 769px) {
@@ -330,7 +355,7 @@ h1 {
 	.right-side p {
 		font-size: 16px;
 		padding: 0 16px;
-		text-align: center;
+		/* text-align: center; */
 	}
 
 	.right-side p:last-child {
@@ -339,6 +364,43 @@ h1 {
 
 	.right-side p.title {
 		font-size: 18px;
-		margin-top: 0;
+	}
+}
+
+@media (max-width: 425px) {
+	.mobile .unavailable p {
+		max-width: 100%;
+	}
+
+	.unavailable__subtitle {
+		margin-bottom: 40px;
+	}
+
+	.unavailable__text {
+		margin-bottom: 30px;
+	}
+
+	.app {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 375px) {
+	.unavailable {
+		padding: 24px 20px;
+	}
+}
+
+@media (max-width: 360px) {
+	.unavailable {
+		padding: 24px 20px;
+	}
+	
+	.unavailable__subtitle {
+		font-size: 20px;
+	}
+
+	.unavailable p:not(.unavailable__subtitle) {
+		font-size: 16px;
 	}
 }
