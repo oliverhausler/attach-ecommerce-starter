@@ -260,6 +260,10 @@ h1 {
 	max-width: 74%;
 }
 
+.mobile .direction {
+	z-index: -1;
+}
+
 .hide {
 	display: none;
 }
