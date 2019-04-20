@@ -88,6 +88,12 @@ h1 {
 	justify-content: center;
 }
 
+.right-side .platforms li {
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
 .center {
 	align-self: center;
 }
@@ -117,6 +123,10 @@ h1 {
 	margin: 0 10px;
 	max-width: 80px;
 	width: 100%;
+}
+
+.platform-icon.coming {
+	max-width: 160px;
 }
 
 .logo-wrapper {
@@ -350,6 +360,8 @@ h1 {
 
 	.right-side .platforms li {
 		text-align: center;
+		display: flex;
+		align-items: center;
 	}
 
 	.right-side .webrtc-logo {
