@@ -18,9 +18,7 @@ function onKeyUp(e) {
 }
 
 function setUpNavigationListeners() {
-	document
-		.querySelector('#previousButton')
-		.addEventListener('click', previousPage)
+	document.querySelector('#previousButton').addEventListener('click', previousPage)
 	document.querySelector('#nextButton').addEventListener('click', nextPage)
 	document.addEventListener('keyup', onKeyUp)
 }

@@ -10,3 +10,15 @@ function render(pageData) {
 	price.innerText = pageData.price.toFixed(2)
 	credits.innerText = pageData.credits
 }
+
+function hide(el) {
+	const list = el.classList
+	list.remove('flex')
+	list.add('hide')
+}
+
+function show(el) {
+	const list = el.classList
+	list.add('flex')
+	list.remove('hide')
+}

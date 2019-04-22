@@ -264,6 +264,10 @@ h1 {
 	z-index: -1;
 }
 
+.flex {
+	display: flex;
+}
+
 .hide {
 	display: none;
 }

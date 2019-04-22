@@ -1,15 +1,12 @@
 var landingPage = document.querySelector('#landing')
 var magazinePage = document.querySelector('#pages')
 
-var router = new Navigo(
-	'https://attach-live.github.io/attach-ecommerce-starter/',
-	false
-)
+var router = new Navigo('https://attach-live.github.io/attach-ecommerce-starter/', false)
 
 router
 	.on(':name', function(params) {
-		magazinePage.style.display = 'flex'
-		landingPage.style.display = 'none'
+		hide(landingPage)
+		show(magazinePage)
 		setUpNavigationListeners()
 
 		var pageNumber = magazine.getPageNumber(params.name)
@@ -28,8 +25,10 @@ router
 		if (pathPhoto) {
 			return router.navigate(pathPhoto)
 		}
-		landingPage.style.display = 'flex'
-		magazinePage.style.display = 'none'
+
+		hide(magazinePage)
+		show(landingPage)
+
 		document.querySelector('#landing .left-side').style.backgroundImage =
 			'url("' + pages[0].photo.url + '")'
 		document.querySelector('#start').addEventListener('click', nextPage)
