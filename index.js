@@ -1,7 +1,7 @@
 var landingPage = document.querySelector('#landing')
 var magazinePage = document.querySelector('#pages')
 
-var router = new Navigo('http://127.0.0.1:8080', false)
+var router = new Navigo('https://attach-live.github.io/attach-ecommerce-starter/', false)
 
 router
 	.on(':name', function(params) {
