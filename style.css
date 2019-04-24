@@ -121,12 +121,8 @@ h1 {
 
 .platform-icon {
 	margin: 0 10px;
-	max-width: 80px;
-	width: 100%;
-}
-
-.platform-icon.coming {
 	max-width: 160px;
+	width: 100%;
 }
 
 .logo-wrapper {
