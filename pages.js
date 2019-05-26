@@ -11,8 +11,8 @@ var pages = [
 			'attach:videocall:button-background-color': '#1e4aea',
 			'attach:videocall:remote-background-color': '#ffc730',
 			'attach:videocall:local-background-color': '#ffc730',
-			'attach:chat:viewer-background-color': '#ffffff',
-			'attach:chat:editor-background-color': '#ffffff',
+			'attach:chat:viewer-background-color': '#ffc730',
+			'attach:chat:editor-background-color': '#ffc730',
 		},
 	},
 	{
